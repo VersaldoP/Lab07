@@ -7,6 +7,7 @@ public class Nerc {
 	private String value;
 
 	public Nerc(int id, String value) {
+		super();
 		this.id = id;
 		this.value = value;
 	}
@@ -48,7 +49,9 @@ public class Nerc {
 			return false;
 		return true;
 	}
-
+//	public int compareTo(Nerc nerc) {
+//	 return this.value.compareTo(nerc.value);
+//	}
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
